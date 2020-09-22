@@ -28,9 +28,16 @@ pipeline {
               //  bat 'git fetch origin'
              //   bat 'git checkout origin/master'
              //   bat 'git fetch origin'
-                bat 'git merge remote.origin1/master'
-                bat 'git push remote.origin1 master'
-                echo "end if the world"
+              //  bat 'git merge remote.origin1/master'
+             //   bat 'git push remote.origin1 master'
+             //   echo "end if the world"
+                
+                 dir('LetME') {
+                    git url: 'https://github.com/shekhar1100/LetME.git'
+                }
+                dir('AAI') {
+                    git url: 'https://github.com/shekhar1100/AAI.git'
+                }
             }
         }
     }
