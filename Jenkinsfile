@@ -57,6 +57,7 @@ pipeline {
                // }
                bat 'git clone --bare https://github.com/shekhar1100/AAI.git'
                cd 'AAI.git'
+               echo "end of my pipeline"
             }
         }
     }
