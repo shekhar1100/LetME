@@ -56,10 +56,16 @@ pipeline {
                 //    git url: 'https://github.com/shekhar1100/AAI.git'
                // }
              //  bat 'rmdir /S AAI.git'
-               bat 'git clone --bare https://github.com/shekhar1100/AAI.git'
-               bat 'cd AAI.git'
-                bat 'git push --mirror https://github.com/shekhar1100/test.git'
-               echo "end of my pipeline"
+            //   bat ''
+              // bat ''
+               // bat ''
+               //echo "end of my pipeline"
+                
+                bat """
+                    call git clone --bare https://github.com/shekhar1100/AAI.git
+                    cd AAI.git
+                    call git push --mirror https://github.com/shekhar1100/test.git
+                """
             }
         }
     }
