@@ -31,13 +31,30 @@ pipeline {
               //  bat 'git merge remote.origin1/master'
              //   bat 'git push remote.origin1 master'
              //   echo "end if the world"
+
+               //     dir('LetME') {
+                 //       git url: 'https://github.com/shekhar1100/LetME.git'
+                   // }
+           //         # add a remote repository
+             ///       cd 'LetME'
+                //    bat 'git remote add --mirror=fetch repo1 $REPO1_URL'
+
+                  //  # update the local copy from the first repository
+                    //bat 'git fetch origin --tags'
+//
+  //                  # update the local copy with the second repository
+    //                bat 'git fetch repo1 --tags'
+//
+  ///                  # sync back the 2 repositories
+     //               git push origin --all
+       ///             git push origin --tags
+          //          git push repo1 --all
+            //        git push repo1 --tags
                 
-                 dir('LetME') {
-                    git url: 'https://github.com/shekhar1100/LetME.git'
-                }
-                dir('AAI') {
-                    git url: 'https://github.com/shekhar1100/AAI.git'
-                }
+                 
+              //  dir('AAI') {
+                //    git url: 'https://github.com/shekhar1100/AAI.git'
+               // }
             }
         }
     }
