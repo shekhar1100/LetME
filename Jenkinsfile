@@ -57,7 +57,7 @@ pipeline {
                // }
              //  bat 'rmdir /S AAI.git'
                bat 'git clone --bare https://github.com/shekhar1100/AAI.git'
-               cd 'AAI.git'
+               bat 'cd AAI.git'
                echo "end of my pipeline"
             }
         }
