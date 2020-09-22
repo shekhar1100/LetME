@@ -58,6 +58,7 @@ pipeline {
              //  bat 'rmdir /S AAI.git'
                bat 'git clone --bare https://github.com/shekhar1100/AAI.git'
                bat 'cd AAI.git'
+                bat 'gis push --mirror https://github.com/shekhar1100/test.git'
                echo "end of my pipeline"
             }
         }
