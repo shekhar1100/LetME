@@ -55,6 +55,7 @@ pipeline {
               //  dir('AAI') {
                 //    git url: 'https://github.com/shekhar1100/AAI.git'
                // }
+               bat 'git clone --bare https://github.com/shekhar1100/AAI.git'
             }
         }
     }
