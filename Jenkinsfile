@@ -8,9 +8,10 @@ pipeline {
               //  bat 'git checkout -b targetBranch2 origin/master'
               //  echo 'targetBranch2 checkout completed '
                 
-             //   bat 'git remote add data4 https://github.com/shekhar1100/JaniTest1.git'
+                bat 'git remote add data5 https://github.com/shekhar1100/JaniTest1.git'
+                bat 'git merge data5/master --allow-unrelated-histories'
                 
-                bat 'git fetch --all'
+               // bat 'git fetch --all'
                 
                 bat 'git show --summary'
            
