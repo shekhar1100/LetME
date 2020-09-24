@@ -6,6 +6,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 bat 'git checkout -b sourceBranch origin1/master'
+                bat 'git pull origin/master'
                 echo 'sourceBranch checkout completed '
                 
                 
