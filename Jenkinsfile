@@ -5,9 +5,9 @@ pipeline {
         stage('Hello') {
             steps {
             //  echo 'Hello World'
-                bat 'git remote add data9 https://github.com/shekhar1100/JaniTest1.git'
+                bat 'git remote add data10 https://github.com/shekhar1100/JaniTest1.git'
              //   bat 'git checkout -b targetBranch2 data8/master'
-                bat 'git rebase data9/master'
+                bat 'git pull data10/master'
               //  bat 'git replace --graft $(git log data6/master --format=%H | tail -1) HEAD'
                 //bat 'git replace --graft $(git log origin/master --format=%H | tail -1) data6/master'
                 //bat 'git reset --hard origin/master'
