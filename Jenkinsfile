@@ -5,8 +5,14 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                bat 'git checkout -b origin/master'
+                bat 'git checkout -b sourceBranch origin1/master'
+                echo 'sourceBranch checkout completed '
+                
+                
+                bat 'git checkout -b targetBranch origin/master'
+                bat 'git merge sourceBranch'
                 echo 'End of World'
+                
               //  bat 'git remote add origin2 https://github.com/shekhar1100/JaniTest1.git'
               //  bat 'git remote set-url origin https//github.com/shekhar1100/DataTestEmpty.git'
              //   bat 'git remote set-url origin https://github.com/shekhar1100/DataTestEmpty.git'
