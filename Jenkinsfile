@@ -5,6 +5,8 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
+                bat 'git checkout -b origin/master'
+                echo 'End of World'
               //  bat 'git remote add origin2 https://github.com/shekhar1100/JaniTest1.git'
               //  bat 'git remote set-url origin https//github.com/shekhar1100/DataTestEmpty.git'
              //   bat 'git remote set-url origin https://github.com/shekhar1100/DataTestEmpty.git'
@@ -61,11 +63,7 @@ pipeline {
                // bat ''
                //echo "end of my pipeline"
                 
-                bat """
-                    call git clone --bare https://github.com/shekhar1100/AAI.git
-                    cd AAI.git
-                    call git push --mirror https://github.com/shekhar1100/test.git
-                """
+         
             }
         }
     }
