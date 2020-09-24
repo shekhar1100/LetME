@@ -5,8 +5,8 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                bat 'git checkout -b targetBranch2 origin/master'
-                echo 'targetBranch2 checkout completed '
+              //  bat 'git checkout -b targetBranch2 origin/master'
+              //  echo 'targetBranch2 checkout completed '
                 
                 bat 'git remote add data1 https://github.com/shekhar1100/JaniTest1.git'
            
