@@ -5,13 +5,15 @@ pipeline {
         stage('Hello') {
             steps {
             //  echo 'Hello World'
-            //    bat 'git remote add data6 https://github.com/shekhar1100/JaniTest1.git'
+                bat 'git remote add data8 https://github.com/shekhar1100/JaniTest1.git'
+                bat 'git checkout -b targetBranch2 data8/master'
+                bat 'git rebase master'
               //  bat 'git replace --graft $(git log data6/master --format=%H | tail -1) HEAD'
                 //bat 'git replace --graft $(git log origin/master --format=%H | tail -1) data6/master'
                 //bat 'git reset --hard origin/master'
                  echo 'End of World'
                 
-              //  bat 'git checkout -b targetBranch2 origin/master'
+             //   bat 'git checkout -b targetBranch2 origin/master'
               //  echo 'targetBranch2 checkout completed '
                 
               //  bat 'git remote add data5 https://github.com/shekhar1100/JaniTest1.git'
