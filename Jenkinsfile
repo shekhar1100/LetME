@@ -8,9 +8,9 @@ pipeline {
               //  bat 'git checkout -b targetBranch2 origin/master'
               //  echo 'targetBranch2 checkout completed '
                 
-                bat 'git remote add data1 https://github.com/shekhar1100/JaniTest1.git'
+                bat 'git remote add data2 https://github.com/shekhar1100/JaniTest1.git'
            
-                bat 'git merge data1/master'
+                bat 'git merge data2/master -m "Merging from devel"'
                 echo 'End of World'
                 
               //  bat 'git remote add origin2 https://github.com/shekhar1100/JaniTest1.git'
