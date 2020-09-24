@@ -11,6 +11,8 @@ pipeline {
              //   bat 'git remote add data4 https://github.com/shekhar1100/JaniTest1.git'
                 
                 bat 'git fetch --all'
+                
+                bat 'git show --summary'
            
             //    bat 'git merge data4/master --allow-unrelated-histories'
                 echo 'End of World'
