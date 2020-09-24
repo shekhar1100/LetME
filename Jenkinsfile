@@ -5,18 +5,24 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
+                bat 'git remote add data6 https://github.com/shekhar1100/JaniTest1.git'
+                bat 'git replace --graft $(git log data6/master --format=%H | tail -1) HEAD'
+                bat 'git replace --graft $(git log origin/master --format=%H | tail -1) data6/master'
+                bat 'git reset --hard origin/master'
+                 echo 'End of World'
+                
               //  bat 'git checkout -b targetBranch2 origin/master'
               //  echo 'targetBranch2 checkout completed '
                 
-                bat 'git remote add data5 https://github.com/shekhar1100/JaniTest1.git'
-                bat 'git merge data5/master --allow-unrelated-histories'
+              //  bat 'git remote add data5 https://github.com/shekhar1100/JaniTest1.git'
+               // bat 'git pull data5/master --allow-unrelated-histories'
                 
                // bat 'git fetch --all'
                 
-                bat 'git show --summary'
+             //   bat 'git show --summary'
            
             //    bat 'git merge data4/master --allow-unrelated-histories'
-                echo 'End of World'
+             //   echo 'End of World'
                 
               //  bat 'git remote add origin2 https://github.com/shekhar1100/JaniTest1.git'
               //  bat 'git remote set-url origin https//github.com/shekhar1100/DataTestEmpty.git'
